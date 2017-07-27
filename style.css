@@ -2,3 +2,13 @@
     font-family: "Julee";
     font-size: 20px;
 }
+
+.navbar-header{
+    background-color: #FAEBD7;
+}
+
+.jumbotron{
+    font-family: "Shadows Into Light";
+    font-size: 60px;
+    letter-spacing: 5px;
+}
