@@ -1,0 +1,1 @@
+var housing_var = angular.module('housing', []);

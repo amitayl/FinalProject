@@ -7,6 +7,14 @@
     background-color: #FAEBD7;
 }
 
+.navbar{
+    background-color: #FAEBD7;
+}
+
+.active{
+    background-color: red;
+}
+
 .jumbotron{
     font-family: "Shadows Into Light";
     font-size: 60px;
