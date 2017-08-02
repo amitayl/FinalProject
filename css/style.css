@@ -1,5 +1,5 @@
 body{
-    font-family: "Julee";
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .jumbotron{
@@ -9,10 +9,29 @@ body{
     opacity: 0.2;
 }
 
-.container {
+ .container {
         width: 100%;
-        height: 90px;
+        height: 50px;
         margin: 0 auto;
-        background-color: rgba(255,255,255,0.5);
-        color: red;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h1{
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+
 }
