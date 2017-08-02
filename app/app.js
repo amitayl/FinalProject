@@ -17,3 +17,12 @@ housing.config(function ($routeProvider) {
             controller: "accountDetailsCtrl"
         })
 });
+
+
+function changeBodyBackground(url) {
+    document.body.style.backgroundImage = "url("+url+")";
+    document.body.style.padding = "100px 0";
+    document.body.style.backgroundRepeat = "no-repeat"
+    document.body.style.color = "#f8f8f8";
+    document.body.style.backgroundSize = "cover";
+}

@@ -21,10 +21,13 @@
          <link href="https://fonts.googleapis.com/css?family=Julee|Shadows+Into+Light" rel="stylesheet">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS Files -->
         <link href="css/style.css" rel="stylesheet">
+        
 
         <!-- JS files -->
         <script src="app/app.js"></script>
+        <script src="app/accounts/accountsGalleryCtrl.js"></script>
         <script src="app/navbar/navbarCtrl.js"></script>
         <script src="app/home/homeCtrl.js"></script>
         <script src="app/user/user.js"></script>
@@ -35,7 +38,7 @@
 
     <body ng-app="housing">
         
-             <nav class="navbar navbar-default" role="navigation">
+             <nav class="navbar navbar-default navbar-fixed-top topnav container" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -47,22 +50,21 @@
                     <a class="navbar-brand" href="#">Household</a>
                 </div>
             
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right" ng-controller="navbarCtrl">
-                    <ul class="nav navbar-nav">
-                        <li ng-show="isLogedIn()"><a href="#">Login</a></li>
-                        <li ng-hide="isLogedIn()"><a href="#">Logout</a></li>
-                    </ul>
-                    
-        
-                </div><!-- /.navbar-collapse -->
-            </nav>
-            
-            <div class="jumbotron text-center">
-                <div class="container">
-                    <h1>Household</h1>
-                </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ng-hide="isLogedIn()"><a href="#">Login</a></li>
+                    <li ng-show="isLogedIn()"><a href="#">Logout</a></li>
+                </ul>
             </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!-- <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right" ng-controller="navbarCtrl">
+                    <ul class="nav navbar-nav">
+                        <li ng-hide="isLogedIn()"><a href="#">Login</a></li>
+                        <li ng-show="isLogedIn()"><a href="#">Logout</a></li>
+                    </ul>
+                </div> -->
+            </nav>
 
             <ng-view></ng-view>
 

@@ -1,22 +1,18 @@
-.navbar-brand{
+body{
     font-family: "Julee";
-    font-size: 20px;
-}
-
-.navbar-header{
-    background-color: #FAEBD7;
-}
-
-.navbar{
-    background-color: #FAEBD7;
-}
-
-.active{
-    background-color: red;
 }
 
 .jumbotron{
     font-family: "Shadows Into Light";
     font-size: 60px;
     letter-spacing: 5px;
+    opacity: 0.2;
+}
+
+.container {
+        width: 100%;
+        height: 90px;
+        margin: 0 auto;
+        background-color: rgba(255,255,255,0.5);
+        color: red;
 }
