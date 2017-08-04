@@ -16,6 +16,9 @@ housing.config(function ($routeProvider) {
             templateUrl: "app/accounts/accountDetails.html",
             controller: "accountDetailsCtrl"
         })
+        .otherwise({
+        template : "<h1>None</h1><p>Nothing has been selected</p>"
+    });
 });
 
 

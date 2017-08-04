@@ -1,0 +1,16 @@
+[
+    {
+        "email":"nir@nir.com",
+        "password": "nir123",
+        "firstName":"Nir",
+        "lastName": "Channes",
+        "data":"app/data/nir-accounts.json"
+    },
+    {
+        "email":"amitay@levi.com",
+        "password": "12345678",
+        "firstName":"Amitay",
+        "lastName": "Levi",
+        "data":"app/data/amitay-accounts.json"
+    }
+]

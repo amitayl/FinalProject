@@ -1,0 +1,42 @@
+[
+    {
+        "service" : "Cellular",
+        "company" : "012 Mobile",
+        "plan_description" : "No limit Internet, calls and SMS",
+        "starting_date" : "1/1/2017",
+        "ending_date" : "1/1/2018",
+        "rate" : "40 NIS",
+        "phone" : "*053",
+        "calander_notification" : "Yes"
+    },
+    {
+        "service" : "Car Insurance",
+        "company" : "Migdal",
+        "plan_description" : "Full Covarage - Makif",
+        "starting_date" : "1/1/2017",
+        "ending_date" : "1/1/2018",
+        "rate" : "3000 NIS",
+        "phone" : "03-6111111",
+        "calander_notification" : "Yes"
+    },
+    {
+        "service" : "Cellular",
+        "company" : "012 Mobile",
+        "plan_description" : "No limit Internet, calls and SMS",
+        "starting_date" : "4/5/2016",
+        "ending_date" : "3/5/2017",
+        "rate" : "40 NIS",
+        "phone" : "*053",
+        "calander_notification" : "Yes"
+    },
+    {
+        "service" : "House Insurance",
+        "company" : "Klal",
+        "plan_description" : "Exterior only",
+        "starting_date" : "1/1/2017",
+        "ending_date" : "1/1/2018",
+        "rate" : "100 NIS",
+        "phone" : "03-6999000",
+        "calander_notification" : "No"
+    }
+]

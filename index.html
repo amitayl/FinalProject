@@ -30,6 +30,7 @@
         <script src="app/accounts/accountsGalleryCtrl.js"></script>
         <script src="app/navbar/navbarCtrl.js"></script>
         <script src="app/home/homeCtrl.js"></script>
+        <script src="app/login/loginCtrl.js"></script>
         <script src="app/user/user.js"></script>
 
 
@@ -38,7 +39,7 @@
 
     <body ng-app="housing">
         
-             <nav class="navbar navbar-default navbar-fixed-top topnav container" role="navigation">
+            <nav class="navbar navbar-default navbar-fixed-top topnav container" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -51,10 +52,13 @@
                 </div>
             
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controller="navbarCtrl">
                     <ul class="nav navbar-nav navbar-right">
-                        <li ng-hide="isLogedIn()"><a href="#">Login</a></li>
+                        <li ng-show="isLogedIn()"><a href="#">1</a></li>
+                        <li ng-show="isLogedIn()"><a href="#">2</a></li>
+                        <li ng-show="isLogedIn()"><a href="#">3</a></li>
                         <li ng-show="isLogedIn()"><a href="#">Logout</a></li>
+                        <li ng-hide="isLogedIn()"><a href="#">Login</a></li>
                     </ul>
                 </div>
                
