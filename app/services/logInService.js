@@ -1,5 +1,5 @@
 // Service that manges the active user
-recipeApp.factory("logInService", function(User){
+housing.factory("logInService", function(User){
     var user = null;
 
     var isLoggedIn = function() {

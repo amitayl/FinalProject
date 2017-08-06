@@ -1,5 +1,5 @@
 // Shared User Constructor
-recipeApp.factory("createUserService", function(){
+housing.factory("createUserService", function(){
     function User(plainObject) {
         this.email = plainObject.email;
         this.password = plainObject.password;
