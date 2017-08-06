@@ -34,7 +34,7 @@
         <script src="app/user/user.js"></script>
         <script src="app/services/logInService.js"></script>
         <script src="app/services/createUserService.js"></script>
-        
+        <script src="app/loginModal/loginModalCtrl.js"></script>
 
 
 
@@ -57,11 +57,11 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controller="logInCtrl">
                     <ul class="nav navbar-nav navbar-right">
-                        <li ng-show="isLogedIn()"><a href="#">1</a></li>
-                        <li ng-show="isLogedIn()"><a href="#">2</a></li>
-                        <li ng-show="isLogedIn()"><a href="#">3</a></li>
+                        <li ng-show="isLogedIn()"><a href="#">Update Account</a></li>
+                        <li ng-show="isLogedIn()"><a href="#">Delete Account</a></li>
+                        <li ng-show="isLogedIn()"><a href="#">Print</a></li>
                         <li ng-show="isLogedIn()"><a href="#">Logout</a></li>
-                        <li ng-hide="isLogedIn()"><a href="#">Login</a></li>
+                        <li ng-hide="isLogedIn()" ng-click="login()"><a href="#">Login</a></li>
                     </ul>
                 </div>
                
