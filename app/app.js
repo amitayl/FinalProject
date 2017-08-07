@@ -1,4 +1,4 @@
-var housing = angular.module('housing', ["ngRoute"]);
+var housing = angular.module('housing', ["ngRoute", "ui.bootstrap"]);
 
 
 

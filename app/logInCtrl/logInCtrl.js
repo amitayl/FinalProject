@@ -1,7 +1,7 @@
 housing.controller('logInCtrl', function($scope, logInService, $uibModal){
 
     $scope.isLogedIn = function(){
-         return logInService.isLogedIn();
+         return logInService.isLoggedIn();
          
     };
 
@@ -10,5 +10,5 @@ housing.controller('logInCtrl', function($scope, logInService, $uibModal){
             templateUrl: "app/loginModal/loginModalPage.html",
             controller: "loginModalCtrl"
         })
-    }
+    };
 });

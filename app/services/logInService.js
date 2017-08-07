@@ -1,5 +1,5 @@
 // Service that manges the active user
-housing.factory("logInService", function(User){
+housing.factory("logInService", function () {
     var user = null;
 
     var isLoggedIn = function() {
