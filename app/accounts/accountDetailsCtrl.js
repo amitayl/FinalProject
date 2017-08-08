@@ -7,19 +7,23 @@ housing.controller("accountDetailsCtrl", function ($scope, $location, accountSer
     }
 
     // Creating a copy of the recipe object so changes won't be reflected on the array
-    $scope.recipe = new Recipe(recipes.get($routeParams.recipeIndex));
+    $scope.account = new createAccountService(accountService.get($routeParams.accountIndex));
+    $scope.account.starting_date = new Date($scope.account.starting_date);
+    $scope.account.ending_date = new Date($scope.account.ending_date);
+
+    console.log($scope.account);
 
     $scope.cancel = function() {
         $location.path("/accounts");
     }
 
     $scope.update = function() {
-        recipes.update($routeParams.recipeIndex, $scope.recipe);
+        accountService.update($routeParams.accountIndex, $scope.account);
         $location.path("/accounts");
     }
 
     $scope.remove = function() {
-        recipes.remove($routeParams.recipeIndex);
+        accountService.remove($routeParams.accountIndex);
         $location.path("/accounts");
     }
     

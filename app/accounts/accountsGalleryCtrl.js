@@ -1,4 +1,4 @@
-housing.controller('accountsGalleryCtrl', function($scope,$http, $location, logInService, accountService){
+housing.controller('accountsGalleryCtrl', function($scope,$http, $location, logInService, accountService, createAccountService){
     
     changeBodyBackground("img/intro-bg.jpg");
 
@@ -22,7 +22,7 @@ housing.controller('accountsGalleryCtrl', function($scope,$http, $location, logI
 
 
     $scope.newAccount = function() {
-        
+        $location.path("/accounts/newAccount");
     }
 
 

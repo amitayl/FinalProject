@@ -7,7 +7,7 @@
         "ending_date" : "1/1/2018",
         "rate" : "40 NIS",
         "phone" : "*053",
-        "calander_notification" : "Yes"
+        "calander_notification" : "true"
     },
     {
         "service" : "Car Insurance",
@@ -17,7 +17,7 @@
         "ending_date" : "1/1/2018",
         "rate" : "3000 NIS",
         "phone" : "03-6111111",
-        "calander_notification" : "Yes"
+        "calander_notification" : "true"
     },
     {
         "service" : "Cellular",
@@ -27,7 +27,7 @@
         "ending_date" : "3/5/2017",
         "rate" : "40 NIS",
         "phone" : "*053",
-        "calander_notification" : "Yes"
+        "calander_notification" : "true"
     },
     {
         "service" : "House Insurance",
@@ -37,6 +37,6 @@
         "ending_date" : "1/1/2018",
         "rate" : "100 NIS",
         "phone" : "03-6999000",
-        "calander_notification" : "No"
+        "calander_notification" : "false"
     }
 ]

@@ -1,5 +1,4 @@
-var housing = angular.module('housing', ["ngRoute", "ui.bootstrap"]);
-
+var housing = angular.module('housing', ["ngRoute", "ngPrint", "ui.bootstrap"]);
 
 
 housing.config(function ($routeProvider) {
@@ -11,6 +10,10 @@ housing.config(function ($routeProvider) {
         .when("/accounts", {
             templateUrl: "app/accounts/accountsGallery.html",
             controller: "accountsGalleryCtrl"
+        })
+        .when("/accounts/newAccount", {
+            templateUrl: "app/accounts/newAccount.html",
+            controller: "newAccountCtrl"
         })
         .when("/accounts/:accountIndex", {
             templateUrl: "app/accounts/accountDetails.html",

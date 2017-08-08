@@ -14,7 +14,7 @@
         <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  
         <!--UI Bootstrap-->
-        <script src= "https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+        <script src= "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
 
         <!-- Fonts -->
          <link href="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet"> 
@@ -23,7 +23,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CSS Files -->
         <link href="css/style.css" rel="stylesheet">
-        
+
+        <!-- Print Report -->
+        <link rel="stylesheet" href="components/ngPrint/ngPrint.css" />
+        <script src="https://rawgit.com/gilf/ngPrint/master/ngPrint.min.js"></script>
 
         <!-- JS files -->
         <script src="app/app.js"></script>
@@ -37,6 +40,7 @@
         <script src="app/services/accountService.js"></script>
         <script src="app/loginModal/loginModalCtrl.js"></script>
         <script src="app/accounts/accountDetailsCtrl.js"></script>
+        <script src="app/accounts/newAccountCtrl.js"></script>
         
 
 
@@ -60,9 +64,7 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controller="logInCtrl">
                     <ul class="nav navbar-nav navbar-right">
-                        <li ng-show="isLogedIn()"><a href="#">Update Account</a></li>
-                        <li ng-show="isLogedIn()"><a href="#">Delete Account</a></li>
-                        <li ng-show="isLogedIn()"><a href="#">Print</a></li>
+                        <li ng-print print-element-id="printThisElement"><a href="#">Print</a></li>
                         <li ng-show="isLogedIn()" ng-click="logout()"><a href="#">Logout</a></li>
                         <li ng-hide="isLogedIn()" ng-click="login()"><a href="#">Login</a></li>
                     </ul>

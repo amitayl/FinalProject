@@ -1,4 +1,4 @@
-housing.controller('logInCtrl', function($scope, logInService, $uibModal){
+housing.controller('logInCtrl', function($scope, logInService, $uibModal, accountService){
 
     $scope.isLogedIn = function(){
          return logInService.isLoggedIn();
@@ -11,6 +11,12 @@ housing.controller('logInCtrl', function($scope, logInService, $uibModal){
             controller: "loginModalCtrl"
         })
     };
+
+    $scope.print = function ()    {
+        ///////////////////////////
+        return accountService.getAll();
+    }
+
 
     $scope.logout = function ()    {
         return logInService.logout();
