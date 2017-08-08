@@ -11,7 +11,7 @@ housing.controller("accountDetailsCtrl", function ($scope, $location, accountSer
     $scope.account.starting_date = new Date($scope.account.starting_date);
     $scope.account.ending_date = new Date($scope.account.ending_date);
 
-    console.log($scope.account);
+    
 
     $scope.cancel = function() {
         $location.path("/accounts");
