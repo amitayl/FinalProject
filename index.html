@@ -31,10 +31,13 @@
        
         <script src="app/home/homeCtrl.js"></script>
         <script src="app/loginCtrl/loginCtrl.js"></script>
-        <script src="app/user/user.js"></script>
         <script src="app/services/logInService.js"></script>
         <script src="app/services/createUserService.js"></script>
+        <script src="app/services/createAccountService.js"></script>
+        <script src="app/services/accountService.js"></script>
         <script src="app/loginModal/loginModalCtrl.js"></script>
+        <script src="app/accounts/accountDetailsCtrl.js"></script>
+        
 
 
 
@@ -60,7 +63,7 @@
                         <li ng-show="isLogedIn()"><a href="#">Update Account</a></li>
                         <li ng-show="isLogedIn()"><a href="#">Delete Account</a></li>
                         <li ng-show="isLogedIn()"><a href="#">Print</a></li>
-                        <li ng-show="isLogedIn()"><a href="#">Logout</a></li>
+                        <li ng-show="isLogedIn()" ng-click="logout()"><a href="#">Logout</a></li>
                         <li ng-hide="isLogedIn()" ng-click="login()"><a href="#">Login</a></li>
                     </ul>
                 </div>

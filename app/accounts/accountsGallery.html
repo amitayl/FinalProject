@@ -1,5 +1,26 @@
-<div ng-controller="accountsGalleryCtrl">
-    <h1>Under Construction</h1>
+
+<div class="container">
+    
+    <div class="page-header">
+      <h1>{{first}}'s Accounts</h1>
+    </div>
+    
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="account in accountArr" >
+        
+        <div class="well" ng-click="openDetails($index)">
+            <h3>{{account.service}}</h3>
+        </div>
+        
+    </div>
+    
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" >
+        
+        <div class="well" ng-click="newAccount()">
+            <h3>Add Account</h3>
+        </div>
+        
+    </div>
+    
 </div>
-ng-reapt
-ng-?? to add a single square to have a new account.
+
+

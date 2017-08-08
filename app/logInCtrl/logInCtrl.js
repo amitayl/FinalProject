@@ -11,4 +11,8 @@ housing.controller('logInCtrl', function($scope, logInService, $uibModal){
             controller: "loginModalCtrl"
         })
     };
+
+    $scope.logout = function ()    {
+        return logInService.logout();
+    }
 });
