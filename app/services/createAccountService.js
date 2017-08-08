@@ -8,6 +8,7 @@ housing.factory("createAccountService", function(){
         this.rate = plainObject.rate;
         this.phone = plainObject.phone;
         this.calander_notification = plainObject.calander_notification;
+        this.image = plainObject.image;
     };
     
     return Account;

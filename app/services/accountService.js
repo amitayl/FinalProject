@@ -1,5 +1,11 @@
-housing.factory("accountService", function(createAccountService) {
+housing.factory("accountService", function(createAccountService, $http) {
     var accountsArr = [];
+    var accountTypes = [];
+    $http.get("app/data/account-types.json").then(function (result) {
+         accountTypes = result.data;
+    });
+
+    
 
     var add = function(account) {
         accountsArr.push(account);
@@ -11,6 +17,10 @@ housing.factory("accountService", function(createAccountService) {
 
     var remove = function(index) {
         accountsArr.splice(index, 1);
+    }
+
+    var getAccountTypes = function (){
+        return accountTypes;
     }
 
     var load = function(accountPlainObjectArr) {
@@ -32,6 +42,7 @@ housing.factory("accountService", function(createAccountService) {
     }
 
     return {
+        getAccountTypes : getAccountTypes,
         add: add,
         update: update,
         remove: remove,

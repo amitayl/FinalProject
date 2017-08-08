@@ -6,8 +6,9 @@ housing.controller("newAccountCtrl", function ($scope, $location, accountService
         return;
     }
 
-    $scope.serviceOptions = ["Cellular", "Car Insurance", "Home Insurance", "Pension"];
+    $scope.accountTypes = accountService.getAccountTypes();
 
+    
     $scope.account = new createAccountService({});
 
     $scope.cancel = function () {
@@ -19,3 +20,4 @@ housing.controller("newAccountCtrl", function ($scope, $location, accountService
         $location.path("/accounts");
     }
 });
+
