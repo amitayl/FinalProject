@@ -1,6 +1,7 @@
 housing.factory("accountService", function(createAccountService, $http) {
     var accountsArr = [];
     var accountTypes = [];
+    
     $http.get("app/data/account-types.json").then(function (result) {
          accountTypes = result.data;
     });

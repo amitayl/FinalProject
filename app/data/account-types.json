@@ -1,18 +1,22 @@
 [
     {
         "service":"Cellular",
-        "image":"https://i0.wp.com/nokiapoweruser.com/wp-content/uploads/2015/01/phone_start-350x350.png?fit=350%2C350&ssl=1"
+        "image":"https://i0.wp.com/nokiapoweruser.com/wp-content/uploads/2015/01/phone_start-350x350.png?fit=350%2C350&ssl=1",
+        "icon" : "fa fa-mobile fa-2x"
     },
     {
         "service":"Car Insurance",
-        "image":"https://limelightplatform.com/wp-content/uploads/2015/12/test-drive-icon.png"
+        "image":"https://limelightplatform.com/wp-content/uploads/2015/12/test-drive-icon.png",
+        "icon" : "fa fa-car fa-2x"
     },
     {
         "service":"Home Insurance",
-        "image":"http://huntsvillehomeinsurance.com/wp-content/uploads/2016/11/Home-Icon.png"
+        "image":"http://huntsvillehomeinsurance.com/wp-content/uploads/2016/11/Home-Icon.png",
+        "icon" : "fa fa-home fa-2x"
     },
     {
         "service":"Health Insurance",
-        "image":"https://arbetovinsurance.com/uploads/userpage/images/health.png"
+        "image":"https://arbetovinsurance.com/uploads/userpage/images/health.png",
+        "icon" : "fa fa-heartbeat fa-2x"
     }
 ]
