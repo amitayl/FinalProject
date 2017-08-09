@@ -2,10 +2,10 @@ housing.controller('accountsGalleryCtrl', function($scope,$http, $location, logI
     
     changeBodyBackground("img/intro-bg.jpg");
 
-    // if (!logInService.isLoggedIn()) {
-    //     $location.path("/");
-    //     return;
-    // }
+     if (!logInService.isLoggedIn()) {
+         $location.path("/");
+         return;
+     }
 
     $scope.first = logInService.get().firstName;
 

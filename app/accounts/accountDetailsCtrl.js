@@ -11,7 +11,13 @@ housing.controller("accountDetailsCtrl", function ($scope, $location, accountSer
     $scope.account.starting_date = new Date($scope.account.starting_date);
     $scope.account.ending_date = new Date($scope.account.ending_date);
 
-    
+    $scope.accountTypes = accountService.getAccountTypes();
+    for (i=0;i<$scope.accountTypes.length; i++)
+        {
+            if ($scope.account.service == $scope.accountTypes[i].service)
+                 $scope.account.image = $scope.accountTypes[i].image;
+        }
+
 
     $scope.cancel = function() {
         $location.path("/accounts");

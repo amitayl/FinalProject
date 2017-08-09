@@ -12,7 +12,7 @@
       <div class="form-group">
         <label class="control-label col-sm-2">Select Service:</label>
         <div class="col-sm-10">
-          <select class="form-control" id="service" placeholder="Enter Service Name" ng-model="account.service">
+          <select class="form-control" id="service" placeholder="Enter Service Name" ng-model="account.image">
             <option ng-repeat="option in accountTypes" value="{{option.image}}">{{option.service}}</option>
           </select>
         </div>
@@ -73,7 +73,7 @@
     </form>
   </div>
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <img ng-show="account.service" src="{{account.service}}"/>
+    <img ng-show="account.image" src="{{account.image}}"/>
   </div>
 
 

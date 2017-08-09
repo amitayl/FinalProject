@@ -35,3 +35,13 @@ body{
     color: #f8f8f8;
 
 }
+
+h3 {
+    display : inline;
+    padding-left: 10px;
+    color: red;
+}
+
+.glyphicon{
+    color : blueviolet;
+}
