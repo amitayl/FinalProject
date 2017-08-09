@@ -53,3 +53,7 @@ h3 {
 .wordColor{
     color: black;
 }
+
+.well{
+    cursor: pointer;
+}

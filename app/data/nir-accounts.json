@@ -1,46 +1,46 @@
 [
     {
-        "service" : "Cellular",
-        "company" : "Orange",
-        "plan_description" : "No limit Internet, calls and SMS",
-        "starting_date" : "1/1/2017",
-        "ending_date" : "1/1/2018",
-        "rate" : "40 NIS",
-        "phone" : "*053",
-        "calander_notification" : "true",
-        "image" : "http://www.freecellphonedirectorylookup.com/images/Cellular-Phone-Directory/1.jpg"
+        "service": "Car Insurance",
+        "company": "Klall",
+        "plan_description": "Full Covarage - Makif",
+        "starting_date": "1/1/2017",
+        "ending_date": "1/1/2018",
+        "rate": "3000 NIS",
+        "phone": "03-6111111",
+        "calander_notification": false,
+        "image": "http://www.thecheaperinsurance.com/wp-content/uploads/2015/08/17309474945_628cdaa4b0_o.jpg"
     },
     {
-        "service" : "Car Insurance",
-        "company" : "Klall",
-        "plan_description" : "Full Covarage - Makif",
-        "starting_date" : "1/1/2017",
-        "ending_date" : "1/1/2018",
-        "rate" : "3000 NIS",
-        "phone" : "03-6111111",
-        "calander_notification" : "false",
-        "image" : "http://www.thecheaperinsurance.com/wp-content/uploads/2015/08/17309474945_628cdaa4b0_o.jpg"
+        "service": "Home Insurance",
+        "company": "Harel",
+        "plan_description": "Exterior only",
+        "starting_date": "1/1/2017",
+        "ending_date": "1/1/2018",
+        "rate": "100 NIS",
+        "phone": "03-6999000",
+        "calander_notification": false,
+        "image": "http://homepointri.com/wp-content/uploads/2017/02/homeowners_insurance_image.jpg"
     },
     {
-        "service" : "Health Insurance",
-        "company" : "012 Mobile",
-        "plan_description" : "No limit Internet, calls and SMS",
-        "starting_date" : "4/5/2016",
-        "ending_date" : "3/5/2017",
-        "rate" : "40 NIS",
-        "phone" : "*053",
-        "calander_notification" : "true",
-        "image" : "http://improveinsurance.com/articles/images/health/what-does-health-insurance-generally-cover.jpg"
+        "service": "Health Insurance",
+        "company": "012 Mobile",
+        "plan_description": "No limit Internet, calls and SMS",
+        "starting_date": "4/5/2016",
+        "ending_date": "3/5/2017",
+        "rate": "40 NIS",
+        "phone": "*053",
+        "calander_notification": true,
+        "image": "http://improveinsurance.com/articles/images/health/what-does-health-insurance-generally-cover.jpg"
     },
     {
-        "service" : "Home Insurance",
-        "company" : "Harel",
-        "plan_description" : "Exterior only",
-        "starting_date" : "1/1/2017",
-        "ending_date" : "1/1/2018",
-        "rate" : "100 NIS",
-        "phone" : "03-6999000",
-        "calander_notification" : "false",
-        "image" : "http://homepointri.com/wp-content/uploads/2017/02/homeowners_insurance_image.jpg"
+        "service": "Cellular",
+        "company": "Orange",
+        "plan_description": "No limit Internet, calls and SMS",
+        "starting_date": "1/1/2017",
+        "ending_date": "1/1/2018",
+        "rate": "40 NIS",
+        "phone": "*053",
+        "calander_notification": true,
+        "image": "http://www.freecellphonedirectorylookup.com/images/Cellular-Phone-Directory/1.jpg"
     }
 ]

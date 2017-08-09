@@ -19,6 +19,7 @@ housing.controller('logInCtrl', function($scope, logInService, $uibModal, accoun
 
 
     $scope.logout = function ()    {
+        accountService.removeAll();
         return logInService.logout();
     }
 });
