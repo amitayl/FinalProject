@@ -16,24 +16,19 @@ housing.controller('accountsGalleryCtrl', function($scope,$http, $location, logI
         $http.get(logInService.get().data).then(function(response) {
             accountService.load(response.data);
             $scope.accountArr = accountService.getAll();
-            iconSet();
         });
     } else {
         $scope.accountArr = accountService.getAll();
-        iconSet();   
     }
 
-   
-    function iconSet() 
-    {
-         for (i=0;i<$scope.accountArr.length; i++)
-        {
-            for (j=0;j<$scope.accountTypes.length; j++)
+
+    $scope.getIcon = function(account) {
+        for (i=0;i<$scope.accountTypes.length; i++)
                 {
-                if ($scope.accountArr[i].service == $scope.accountTypes[j].service)
-                    $scope.icon = $scope.accountTypes[j].icon;
+                if (account.service == $scope.accountTypes[i].service)
+                    return $scope.accountTypes[i].icon;
                 }
-        }
+        
     }
 
 

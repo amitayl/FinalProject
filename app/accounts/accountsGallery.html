@@ -8,7 +8,7 @@
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="account in accountArr" >
         
         <div class="well" ng-click="openDetails($index)">
-            <i ng-class="icon" aria-hidden="true"></i>
+            <i ng-class="getIcon(account)" aria-hidden="true"></i>
             <h3>{{account.service}}</h3>
         </div>
         
