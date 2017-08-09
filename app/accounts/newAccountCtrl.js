@@ -16,6 +16,11 @@ housing.controller("newAccountCtrl", function ($scope, $location, accountService
     }
 
     $scope.create = function () {
+        for (i=0;i<$scope.accountTypes.length;i++)
+            {
+                if ($scope.account.image == $scope.accountTypes[i].image)
+                    $scope.account.service = $scope.accountTypes[i].service;
+            }
         accountService.add($scope.account);
         $location.path("/accounts");
     }
