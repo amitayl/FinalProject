@@ -30,8 +30,11 @@ housing.controller("accountDetailsCtrl", function ($scope, $location, accountSer
     }
 
     $scope.remove = function() {
-        accountService.remove($routeParams.accountIndex);
-        $location.path("/accounts");
+        if(confirm("Are you sure you want to delete?"))
+        {
+            accountService.remove($routeParams.accountIndex);
+            $location.path("/accounts");
+        }
     }
     
 })
