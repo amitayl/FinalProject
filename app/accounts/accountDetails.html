@@ -51,6 +51,9 @@
         <label type="checkbox" class="control-label col-sm-2">Notification</label>
         <div class="col-sm-10">
             <input id="notification" type="checkbox" ng-model="account.calander_notification">
+             <!-- <iframe ng-show="account.calander_notification" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=amitayl%40gmail.com&amp;color=%23B1365F&amp;src=en.jewish%23holiday%40group.v.calendar.google.com&amp;color=%23691426&amp;ctz=Asia%2FJerusalem" style="border-width:0" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>  -->
+             <iframe ng-show="account.calander_notification" class="calander_style" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=amitayl%40gmail.com&amp;color=%23B1365F&amp;src=en.jewish%23holiday%40group.v.calendar.google.com&amp;color=%23691426&amp;ctz=Asia%2FJerusalem"></iframe> 
+            <!-- <iframe class="calander_style" ng-show="account.calander_notification"></iframe> -->
         </div>
       </div>
 
